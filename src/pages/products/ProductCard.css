@@ -1,0 +1,149 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Product Page */
+.product-page {
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.header h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.shopping-cart-icon {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.shopping-cart-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Product Card Container */
+.product-card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Individual Product Card */
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Image */
+.card-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Card Details */
+.card-details {
+    padding: 16px;
+    text-align: center;
+}
+
+.product-name {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.product-description {
+    font-size: 0.95rem;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 1.2rem;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Rating Display */
+.rating-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.star {
+    font-size: 1.2rem;
+    margin-right: 4px;
+}
+
+.star.filled {
+    color: #FFD700;
+}
+
+.star.empty {
+    color: #ddd;
+}
+
+.rating-text {
+    margin-left: 8px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Buy Now Button */
+.buy-now {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%;
+}
+
+.buy-now:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Error and Loading States */
+.error-message,
+.no-products,
+.loader {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #ff6b6b;
+}
