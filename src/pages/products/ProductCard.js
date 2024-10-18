@@ -99,9 +99,10 @@ const ProductCard = () => {
                                         <span className="rating-text">({item?.rating})</span>
                                     </div>
                                 </p>
-                                <button className="buy-now" onClick={() => handleAddToCart(item)}>
+                                {item?.stock == 0 ? "" : <button className="buy-now" onClick={() => handleAddToCart(item)} >
                                     Add to Cart
-                                </button>
+                                </button>}
+
                             </div>
                         </div>
                     ))
